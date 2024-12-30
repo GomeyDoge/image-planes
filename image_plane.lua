@@ -30,7 +30,7 @@ hook.Add( "HUDPaint", "BoxStuff", function()
 	drawRotatedImage( cat, Vector( ang, 0, 0 ) )
 end )
 
-concommand.Add("rm", function()
+concommand.Add("rm", function() -- Debug Command
 	ang = (ang + 5) % 360
 	print(ang)
 end )
